@@ -18,6 +18,7 @@ public class ImageController {
 
     @RequestMapping(value = "/execute", method = RequestMethod.GET)
     public String execute() {
+
         Mat matrix = imageManager.loadImage("meme.jpg");
         System.out.println("Image dimensions: " + matrix.size().height + " x " + matrix.size().width);
         System.out.println(matrix.toString());
