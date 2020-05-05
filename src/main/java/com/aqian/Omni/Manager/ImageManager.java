@@ -16,7 +16,7 @@ public class ImageManager {
     String fileDirectory;
 
     public Mat loadImage(String fileName) {
-        OpenCV.loadShared();
+        nu.pattern.OpenCV.loadLocally();
         String fullPath = fileDirectory + "/" + fileName;
         Imgcodecs imageCodecs = new Imgcodecs();
         return imageCodecs.imread(fullPath);
