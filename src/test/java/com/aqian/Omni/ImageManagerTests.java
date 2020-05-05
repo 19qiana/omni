@@ -1,17 +1,15 @@
 package com.aqian.Omni;
 
-import Manager.Logic;
-import org.assertj.core.api.Assert;
+import com.aqian.Omni.Manager.ImageManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class LogicTests {
+public class ImageManagerTests {
 
     @Test
     public void testLogic() {
-        Logic logic = new Logic();
-        logic.Testprint();
+        ImageManager imageManager = new ImageManager();
         assert(1 == 1);
     }
 }
